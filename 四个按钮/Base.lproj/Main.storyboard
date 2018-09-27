@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0P-RO-Jiu">
+                                <rect key="frame" x="20" y="284.5" width="98.5" height="98"/>
+                                <color key="backgroundColor" red="0.52543067929999998" green="0.52552449700000003" blue="0.52542471889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="image3DClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FyL-Jv-8bC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqO-Pu-bQm">
+                                <rect key="frame" x="138.5" y="284.5" width="98" height="98"/>
+                                <color key="backgroundColor" red="0.13595350349999999" green="1" blue="0.27180464970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MqO-Pu-bQm" secondAttribute="height" id="ZDQ-I8-Teg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvm-yX-G9N">
+                                <rect key="frame" x="256.5" y="284.5" width="98.5" height="98"/>
+                                <color key="backgroundColor" red="0.824980186" green="0.0" blue="0.0077232628290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="已采纳" translatesAutoresizingMaskIntoConstraints="NO" id="hHb-zI-VOI">
+                                <rect key="frame" x="147.5" y="422.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Bvm-a9-43H"/>
+                                    <constraint firstAttribute="width" constant="80" id="tux-Pn-pY6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J0P-RO-Jiu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1Pa-4W-8uV"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ehz-7m-K4q"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="top" secondItem="J0P-RO-Jiu" secondAttribute="top" id="Gd8-Lu-gJX"/>
+                            <constraint firstItem="hHb-zI-VOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nc9-Rk-fJm"/>
+                            <constraint firstItem="Nvm-yX-G9N" firstAttribute="top" secondItem="J0P-RO-Jiu" secondAttribute="top" id="Nf9-AK-5Qx"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VD6-TH-X66"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="leading" secondItem="J0P-RO-Jiu" secondAttribute="trailing" constant="20" id="VJO-TE-fXK"/>
+                            <constraint firstItem="hHb-zI-VOI" firstAttribute="top" secondItem="MqO-Pu-bQm" secondAttribute="bottom" constant="40" id="VVQ-ax-kUq"/>
+                            <constraint firstAttribute="trailing" secondItem="Nvm-yX-G9N" secondAttribute="trailing" constant="20" id="XHo-ev-Yz7"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="bottom" secondItem="J0P-RO-Jiu" secondAttribute="bottom" id="e70-1e-dd5"/>
+                            <constraint firstItem="Nvm-yX-G9N" firstAttribute="leading" secondItem="MqO-Pu-bQm" secondAttribute="trailing" constant="20" id="e7J-aP-VtP"/>
+                            <constraint firstItem="Nvm-yX-G9N" firstAttribute="bottom" secondItem="J0P-RO-Jiu" secondAttribute="bottom" id="g1k-8E-Wx8"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="width" secondItem="J0P-RO-Jiu" secondAttribute="width" id="ik8-3Y-38B"/>
+                            <constraint firstItem="Nvm-yX-G9N" firstAttribute="width" secondItem="J0P-RO-Jiu" secondAttribute="width" id="kmI-pL-Gwa"/>
+                            <constraint firstItem="MqO-Pu-bQm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nUw-3M-exN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addImageVieew" destination="hHb-zI-VOI" id="r1k-mE-wPI"/>
+                        <outletCollection property="fristButton" destination="J0P-RO-Jiu" id="hEI-lU-hRc"/>
+                        <outletCollection property="fristButton" destination="MqO-Pu-bQm" id="58A-qd-uU8"/>
+                        <outletCollection property="fristButton" destination="Nvm-yX-G9N" id="FZl-Bw-TT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="已采纳" width="105" height="105"/>
+    </resources>
+</document>
